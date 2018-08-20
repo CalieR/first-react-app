@@ -27,6 +27,11 @@
   to { transform: rotate(360deg); }
 }
 
+body {
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC) no-repeat center fixed;
+  background-size: cover;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -42,11 +47,22 @@ ul {
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  border-bottom: 1px solid #888;
+  display: inline-block;
+  padding: 20px;
+  /* border-bottom: 1px solid #888; */
 }
  
 .menu a {
   text-decoration: none;
   color: #fff;
   display: block;
+}
+
+.App-footer {
+  position: fixed;
+  color: black;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
