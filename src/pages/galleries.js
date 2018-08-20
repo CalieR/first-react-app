@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 
-const Messages = ({ match }) => (
+const Galleries = ({ match }) => (
     <div>
         <ul>
         {
@@ -25,10 +25,10 @@ const Messages = ({ match }) => (
             <Route path={`${match.url}/:id(\\d+)`} component={Message} /> 
             <Route
                 path={match.url}
-                render={() => <h3>Please select a message</h3>} 
+                render={() => <h3>Please select a gallery to view the pics</h3>} 
             />
         </Switch> 
     </div>
 );
 
-export default Messages;
+export default Galleries;
