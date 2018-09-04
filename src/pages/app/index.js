@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './app.css';
 import { 
   Route, 
@@ -29,6 +29,7 @@ class App extends Component {
         </div>
         <div className="App-intro">
           <Switch>
+            {/* Routes with path props */}
             <Route exact path="/" component={Home}/>
             <Route path="/galleries" component={Galleries}/>
             <Route path="/profile" component={Profile}/>
@@ -36,7 +37,7 @@ class App extends Component {
           </Switch>
         </div>
         <footer className="App-footer">
-        Written and coded by CLR
+        Coded by CLR
         </footer>
       </div>
     );
