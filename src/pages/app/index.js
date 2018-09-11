@@ -11,6 +11,8 @@ import {
 import Home from './../../pages/home';
 import Profile from './../../pages/profile';
 import Galleries from './../../pages/galleries';
+import Animals from './../../pages/animal-pictures';
+import Footer from './../../components/footer';
 
 class App extends Component {
   render() {
@@ -24,6 +26,7 @@ class App extends Component {
           <ul>
             <li> <Link to="/">Home</Link> </li>
             <li> <Link to="/galleries">Galleries</Link> </li>
+            <li> <Link to="/animal-pictures">Animals</Link> </li>
             <li> <Link to="/profile">Profile</Link> </li> 
           </ul>
         </div>
@@ -32,13 +35,12 @@ class App extends Component {
             {/* Routes with path props */}
             <Route exact path="/" component={Home}/>
             <Route path="/galleries" component={Galleries}/>
+            <Route path="/animal-pictures" component={Animals}/>
             <Route path="/profile" component={Profile}/>
             <Redirect to="/" />
           </Switch>
         </div>
-        <footer className="App-footer">
-        Coded by CLR
-        </footer>
+        <Footer></Footer> 
       </div>
     );
   }
