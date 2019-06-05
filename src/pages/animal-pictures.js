@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Slider from "../components/slider/index";
+import Slide from "../components/slider/slide";
 
-const Animals = () => (
-    <div>
-        <h2>Coming soon...</h2>
-    </div>  
-);
+const Animals = () => {
+  return <p>{Slider}</p>;
+};
+// const Animals = props => {
+//   return <Slider {...props.images} />;
+// };
 
 export default Animals;
