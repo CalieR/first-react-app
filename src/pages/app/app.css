@@ -60,8 +60,8 @@ ul {
 
 .App-footer {
   position: fixed;
-  color: black;
-  text-align: center;
+  color: red;
+  text-align: left;
   width: 100%;
   bottom: 0;
   left: 0;
